@@ -31,6 +31,11 @@ main {
 	letter-spacing: 1px;
 	margin-top: 5%;
 }
+crypto_title>h1 {
+	color: inherit;
+	font-weight: inherit;
+	letter-spacing: 1px;
+}
 .crypto_prices {
 	display: flex;
 	flex-direction: row;

@@ -1,0 +1,135 @@
+* {
+	background-color: hsl(217, 54%, 11%);
+	font-size: 18px;
+	color:  hsl(215, 51%, 70%);
+	font-family: 'New Font', BlinkMacSystemFont, Roboto, Ubuntu,'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+@font-face {
+	font-family: 'New Font';
+	src: url('https://fonts.google.com/specimen/Outfit');
+	font-weight: 200 400 600;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.crypto {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	background-color: hsl(216, 50%, 16%);
+	box-shadow: -6px 6px 30px black;
+	border-radius: 20px;
+	padding: 20px;
+	max-width: 375px;
+}
+.crypto_title {
+	color: hsl(0, 0%, 100%);
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-top: 5%;
+}
+.crypto_prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.hori>hr {
+	width: 100%;
+	background-color: white;
+	background-image: url(images/icon-view.svg);
+	background-size: 100% 100%;
+	/*color: hsl(215, 51%, 70%);*/
+	/*border-radius: 20px;*/
+	/*padding: -40px 0%;*/
+	fill: white;
+	height: 0.01vh;
+}
+.money {
+	color: hsl(178, 100%, 50%);
+}
+.crypto>div, .crypto>div>div, img, p, span{
+	background-color: hsl(216, 50%, 16%);
+}
+.svgg {
+	display: none;
+}
+@media screen and (min-width: 375px) {
+	.crypto {
+		width: 300px;
+		margin: 10% auto;
+	}
+	.crypto_image>img {
+		width: 100%;
+		margin-bottom: 5%;
+		border-radius: 20px;
+	}
+}
+.crypto_owner {
+	display: flex;
+	flex-direction: row;
+	/*justify-content: center;*/
+	align-items: flex-start;
+	width: 100%;
+}
+.crypto_owner>img {
+	border-radius: 50%;
+	height: 10%;
+	margin-top: 10px;
+	width: 11%;
+	border: 1px solid white;
+}
+.creation {
+	position: relative;
+	bottom: 2px;
+}
+p {
+	padding-left: 5%;
+}
+span {
+	color: hsl(0, 0%, 100%);
+}
+.crypto_details {
+	margin: 4% 0%;
+}
+.crypto_prices {
+	margin-bottom: 4%;
+}
+.crypto_image:hover {
+	cursor: pointer;
+}
+.crypto_image{
+	height: 320px;
+	overflow-wrap: normal;
+}
+.crypto_image:hover>.svgg {
+	/*content: url(images/icon-view.svg);*/
+	background-color: hsla(178, 100%, 50%, 0.4);
+	display: flex;
+	position: relative;
+	float: left;
+	justify-content: center;
+	margin: 0 auto;
+	width: 41px;
+	padding: 43% 43%;
+	bottom: 320px;
+}
+.money::before{
+	content: url(images/icon-ethereum.svg);
+	position: relative;
+	top: 3px;
+}
+.time::before {
+	content: url(images/icon-clock.svg);
+	position: relative;
+	top: 2px;
+}
+.crypto_title:hover, span:hover {
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
+}
+.crypto_title, .money, .time {
+	font-weight: 600;
+}

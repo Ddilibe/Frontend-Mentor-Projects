@@ -1,0 +1,154 @@
+* {
+	font-family: Inter, 'Lexend Deca', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+}
+/* The firstfont face */
+@font-face {
+	font-family: Inter;
+	src: url('https://fonts.google.com/specimen/Inter');
+	font-weight: 400 800;
+	font-display: fallback;
+	font-style: oblique 0deg 10deg;
+}
+/* The second font face */
+@font-face {
+	font-family: 'Lexend Deca';
+	src: url('https://fonts.google.com/specimen/Lexend+Deca');
+	font-weight: 400;
+	font-display: fallback;
+	font-style: oblique 0deg 10deg;
+}
+
+@media screen and (min-width: 320px) {
+	.desktop {
+		display: none;
+	}
+	.mobile{
+		width: 100%;
+	}
+	.images, .not_images{
+		width: 100%;
+	}
+	.not_images {
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		width: 100%;
+		padding: 20px 0px;
+	}
+	.images {
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+	h1, .discover {
+		width: 80%;
+	}
+	main {
+		display: flex;
+		margin: 40px auto;
+		border-radius: 20px;
+		width: 80%;
+		flex-direction: column;
+	}
+	.mini {
+		flex-direction: column;
+		margin: 10px 0px;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		color: hsla(0, 0%, 100%, 0.75);
+	}
+	.mini>div {
+		font-size: 300%;
+		text-align: center;
+	}
+	.mini>div>span{
+		font-size: 50%;
+	}
+	.discover, h1{
+		font-size: 130%;
+		color: hsla(0, 0%, 100%, 0.6);
+		margin: 0px auto;
+		text-align: center;
+	}
+	.discover {
+		margin: 10% auto;
+	}
+}
+@media screen and (min-width: 960px){
+	.mobile {
+		display: none;
+	}
+	.discover {
+		/*margin: 0px auto;*/
+	}
+	.desktop {
+		display: flex;
+		width: 100%;
+	}
+	h1 {
+		margin: 0px auto;
+	}
+	.images {
+		width: 90%;
+	}
+	.mini {
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: flex-start;
+	}
+	.discover {
+		margin: 5% auto;
+		margin-top: 5%;
+	}
+	main {
+		display: flex;
+	border-radius: 20px;
+		margin: 40px auto;
+		margin-top: 100px;
+		flex-direction: row-reverse;
+		width: 80%;
+		min-height: 80%;
+	}
+	.not_images{
+		border-top-left-radius: 20px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 20px;
+	}
+	.images {
+		border-top-right-radius: 20px;
+		border-top-left-radius: 0px;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 0px;
+	}
+
+}
+body {
+	background-color: hsl(233, 47%, 7%);
+	font-size: 15px;
+	min-height: 320px;
+}
+.images {
+	background-color: hsl(277, 64%, 61%);
+}
+.insights{
+	color: hsl(277, 64%, 61%);
+}
+img {
+	mix-blend-mode: overlay;	
+}
+.social {
+	display: flex;
+	flex-direction: column;
+}
+.design {
+	font-size: 10px;
+}
+.mini {
+	display: flex;
+}
+div[class=not_images] {
+	background-color: hsl(244, 38%, 16%);
+}
+h1{
+	/*font-size: 15px;*/
+}

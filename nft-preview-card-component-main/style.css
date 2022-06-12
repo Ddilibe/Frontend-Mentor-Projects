@@ -31,8 +31,8 @@ main {
 	letter-spacing: 1px;
 	margin-top: 5%;
 }
-crypto_title>h1 {
-	color: inherit;
+.crypto_title>h1 {
+	color: hsl(0, 0%, 100%);
 	font-weight: inherit;
 	letter-spacing: 1px;
 }
@@ -55,7 +55,7 @@ crypto_title>h1 {
 .money {
 	color: hsl(178, 100%, 50%);
 }
-.crypto>div, .crypto>div>div, img, p, span{
+.crypto>div, .crypto>div>div, img, p, span, .crypto_title>h1, hr{
 	background-color: hsl(216, 50%, 16%);
 }
 .svgg {
@@ -131,7 +131,7 @@ span {
 	position: relative;
 	top: 2px;
 }
-.crypto_title:hover, span:hover {
+.crypto_title>h1:hover, span:hover {
 	color: hsl(178, 100%, 50%);
 	cursor: pointer;
 }

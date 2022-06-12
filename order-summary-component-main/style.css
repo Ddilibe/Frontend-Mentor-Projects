@@ -1,0 +1,122 @@
+*{
+	font-size: 16px;
+	font-family: 'Red Hat Display',BlinkMacSystemFont, Roboto, Ubuntu,'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 700;
+}
+.order_text, .money, .change{
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Red Hat Display';
+	src: url(https://fonts.google.com/specimen/Red+Hat+Display);
+	font-weight: 500 700 900;
+}
+@media screen and (min-width: 320px) {
+	body {
+		background-image: url(images/pattern-background-mobile.svg);
+		background-repeat: no-repeat;
+		background-color: hsl(225, 100%, 94%);
+	}
+}
+@media screen and (min-width: 738px) {
+	body {
+		background-image: url(images/pattern-background-desktop.svg);
+		background-color: hsl(225, 100%, 94%);
+		background-repeat: no-repeat;
+	}
+}
+.mainbody {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 25px;
+	width: 400px;
+	margin: 5% auto;
+}
+img {
+	width: 100%;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+.maintext {
+	display: flex;
+	width: 80%;
+	margin: 10px auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.order_text {
+	text-align: center;
+	margin-bottom: 5%;
+}
+.music {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	width: 90%;
+	margin: 0px auto;
+	padding: 20px 20px;
+	background-color: hsl(225, 100%, 98%);
+	border-radius: 10px;
+}
+.double {
+	display: flex;
+	flex-direction: row;
+}
+.change{
+	align-self: center;
+	margin-left: auto;
+	color: blue;
+	text-decoration-line: underline;
+	cursor: default;
+}
+.change:hover{
+	text-decoration-line: none;
+	cursor: pointer;
+}
+.up {
+	width: 30%;
+}
+.anamon {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 110px;
+	padding-left: 10px;
+}
+.anamon>:nth-child(1) {
+	font-weight: bolder;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.anamon>:last-child, .order_text {
+	color: hsl(224, 23%, 55%);
+}
+.proceed {
+	background-color: hsl(245, 75%, 52%);
+	padding: 20px 0px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 1px 5px 20px hsl(224, 23%, 55%);
+	margin: 20px 0px;
+}
+.proceed:hover{
+	background-color: hsl(224, 23%, 55%);
+	cursor: pointer;
+}
+.cancel {
+	color: hsl(224, 23%, 55%);
+	margin: 20px;
+}
+.cancel:hover {
+	color: black;
+	cursor: pointer;
+}
+.order{
+	font-size: 20px;
+}

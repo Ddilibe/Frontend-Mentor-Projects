@@ -1,0 +1,94 @@
+*{
+	/*outline: 1px solid red;*/
+}
+@media screen and (min-width: 320px){
+	body{
+		background: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+		background-position: top -250px left -250px, bottom -100px right -100px;
+	}
+	main {
+		margin-top: 20% ;
+	margin-bottom: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+}
+@media screen and (min-width: 780px){
+	body {
+		/*background: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');*/
+		background-position: top -500px left -500px, 800px 300px;
+	}
+	main {
+		margin-top: 5% ;
+	margin-bottom: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+}
+body {
+	height: 90vh;
+	width: 90vw;
+	background-size: 75vmax, 50vw, cover;
+	background-repeat: no-repeat;
+	background-color: hsl(185, 75%, 39%);
+}
+.victorr {
+	border-radius: 50%;
+	width: 30%;
+	border: 6px solid white;
+	margin: 0px auto;
+	margin-top: -50px;
+}
+main {
+	color: hsl(227, 10%, 46%);
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	background-color: white;
+	border-radius: 10px;
+}
+.victor {
+	margin-top: 0px;
+	text-align: center;'
+	background-color: white;'
+}
+.victor>h4{
+	margin-top: -10px;
+}
+.line {
+	height: 0.1em;
+	width: 98%;
+	margin: 0px auto;
+	border-radius: 20px;
+	border: 1px solid hsl(229, 23%, 23%);
+	border-bottom-style: hidden;
+}
+.follow {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	width: 100%;
+	padding: 5% 0px;
+	justify-content: space-evenly;
+}
+.ers {
+	color: hsl(229, 23%, 23%);
+	font-weight: 700;
+}
+.flp {
+	font-weight: 200;
+	font-size: 10px;
+	letter-spacing: 2px;
+	margin: 10px 0px;
+}
+.first {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+h1{
+	color: hsl(229, 23%, 23%);
+}
+span {
+	color: hsl(227, 10%, 46%);
+	font-size: 20px;
+}

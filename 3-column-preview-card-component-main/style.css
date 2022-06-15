@@ -1,0 +1,112 @@
+@media screen and (min-width: 320px){
+	main {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		justify-content: center;
+		margin: 5% auto;
+	}
+	input {
+		width: 30vw;
+		padding: 15px 10%;
+	}
+	.column {
+		padding: 10%;
+	}
+	main>.column:nth-child(1){
+		border-top-right-radius: 10px;
+	}
+	main>.column:nth-child(3){
+		border-bottom-left-radius: 10px;
+	}
+}
+@media screen and (min-width: 788px){
+	main {
+		display: flex;
+		flex-direction: row;
+		width: 80%;
+		justify-content: center;
+		margin: 10% auto;
+	}
+	input {
+		width: 10vw;
+		padding: 15px 0px;
+		margin: 30px 0px;
+	}
+	.column {
+		padding: 5%;
+	}
+	main>.column:nth-child(1){
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 10px;
+	}
+	main>.column:nth-child(3){
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 0px;
+	}
+}
+body {
+	width: 100%;
+	margin: 0px;
+}
+.sand {
+	line-height: 35px;
+}
+input {
+	border-radius: 50px;
+	border: 3px solid white;
+}
+h1, p {
+	color: hsla(0, 0%, 100%, 0.75);
+}
+main>.column:nth-child(1){
+	background-color: hsl(31, 77%, 52%);
+	border-top-left-radius: 10px;
+}
+main>.column:nth-child(2){
+	background-color: hsl(184, 100%, 22%);
+}
+main>.column:nth-child(3){
+	background-color: hsl(179, 100%, 13%);
+	border-bottom-right-radius: 10px;
+}
+main>.column:nth-child(1)>input[type=button]{
+	color: hsl(31, 77%, 52%);
+}
+main>.column:nth-child(2)>input[type=button]{
+	color: hsl(184, 100%, 22%);
+}
+main>.column:nth-child(3)>input[type=button]{
+	color: hsl(179, 100%, 13%);
+}
+
+main>.column:nth-child(1)>input[type=button]:hover{
+	background-color: hsl(31, 77%, 52%);
+	color: hsla(0, 0%, 100%, 0.75);
+}
+main>.column:nth-child(2)>input[type=button]:hover{
+	background-color: hsl(184, 100%, 22%);
+	color: hsla(0, 0%, 100%, 0.75);
+}
+main>.column:nth-child(3)>input[type=button]:hover{
+	background-color: hsl(179, 100%, 13%);
+	color: hsla(0, 0%, 100%, 0.75);
+}
+@font-face {
+	font-family: 'Lexend Deca';
+	src: url(https://fonts.google.com/specimen/Lexend+Deca);
+	font-weight: 400;
+}
+@font-face{
+	font-family: 'Big Shoulder Display';
+	src: url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+	font-weight: 700;
+}
+p {
+	font-weight: 400;
+	font-family: "Lexend Deca";
+}
+h1 {
+	font-weight: 700;
+	font-weight: 'Big Shoulder Display';
+}
